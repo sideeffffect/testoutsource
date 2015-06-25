@@ -8,15 +8,15 @@ The instructions for calculation are read from stdin and the result is printed t
 
 ## Classes overview
 
-There are 3 most important classes.
+There are 3 most important classes:
 
-`cz.sideeffect.testoutsource.Calculator` represents the calculator.
+ * `cz.sideeffect.testoutsource.Calculator` represents the calculator.
 
-`cz.sideeffect.testoutsource.instructions.Instruction`
-represents instructions for the calculator,
-it is an abstract class with concrete subclasses for each instruction.
+ * `cz.sideeffect.testoutsource.instructions.Instruction`
+   represents instructions for the calculator,
+   it is an abstract class with concrete subclasses for each instruction.
 
-`cz.sideeffect.testoutsource.Main` is used for executing the program from commandline.
+ * `cz.sideeffect.testoutsource.Main` is used for executing the program from commandline.
 
 
 ## Usage
@@ -27,8 +27,8 @@ This project is managed by [gradle](https://gradle.org/).
 ### Running
 
 You can run the program via gradle.
-The CSV input is read from `stdin`.
-Reports are exported as HTML and written to `stdout`.
+The instructions are read from `stdin`.
+Result is written to `stdout`.
 
 ```
 gradle -q run < src/test/resources/test1
@@ -57,4 +57,4 @@ gradle javadoc
 
 ## TODO
 
- * reading from file was underspecified, thus stdin used instead
+ * reading from file was underspecified, thus stdin is used instead
