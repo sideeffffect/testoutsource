@@ -37,7 +37,7 @@ gradle -q run < src/test/resources/test1
 
 ### Tests
 
-The project is automatically tested at [Travis-CI](https://travis-ci.org/sideeffffect/testmarket).
+The project is automatically tested at [Travis-CI](https://travis-ci.org/sideeffffect/testoutsource).
 You can run tests yourself via gradle:
 
 ```
